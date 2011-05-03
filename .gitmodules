@@ -1,0 +1,3 @@
+[submodule "MDSectionedTableViewDemo/MDSectionedTableView"]
+	path = MDSectionedTableViewDemo/MDSectionedTableView
+	url = git@github.com:mochidev/MDSectionedTableView.git
