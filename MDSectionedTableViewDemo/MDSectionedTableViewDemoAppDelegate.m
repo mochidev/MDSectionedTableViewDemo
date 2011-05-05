@@ -38,6 +38,7 @@
 @implementation MDSectionedTableViewDemoAppDelegate
 
 @synthesize window;
+@synthesize status;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -80,6 +81,16 @@
     cell.text = [NSString stringWithFormat:@"Section Header %d", section+1];
     
     return cell;
+}
+
+- (void)tableView:(MDSectionedTableView *)tableView didSelectRow:(NSUInteger)row inSection:(NSUInteger)section
+{
+    [status setStringValue:[NSString stringWithFormat:@"Selected Row %lu in Section %lu", row+1, section+1]];
+}
+
+- (void)tableView:(MDSectionedTableView *)tableView didDoubleClickRow:(NSUInteger)row inSection:(NSUInteger)section
+{
+    [status setStringValue:[NSString stringWithFormat:@"Double Clicked Row %lu in Section %lu", row+1, section+1]];
 }
 
 @end

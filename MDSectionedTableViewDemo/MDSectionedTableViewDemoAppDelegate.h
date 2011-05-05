@@ -32,12 +32,15 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MDSectionedTableViewDataSource.h"
+#import "MDSectionedTableViewDelegate.h"
 
-@interface MDSectionedTableViewDemoAppDelegate : NSObject <NSApplicationDelegate, MDSectionedTableViewDataSource> {
+@interface MDSectionedTableViewDemoAppDelegate : NSObject <NSApplicationDelegate, MDSectionedTableViewDataSource, MDSectionedTableViewDelegate> {
 @private
     NSWindow *window;
+    NSTextField *status;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSTextField *status;
 
 @end

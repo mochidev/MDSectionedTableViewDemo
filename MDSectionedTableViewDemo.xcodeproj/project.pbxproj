@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		658114C713721246008A373A /* MDSectionedTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSectionedTableViewDelegate.h; sourceTree = "<group>"; };
 		65A4D6FE136FFC7D0091DC39 /* MDSectionedTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDSectionedTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A4D702136FFC7D0091DC39 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		65A4D705136FFC7D0091DC39 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -129,11 +130,12 @@
 		65A4D721137000530091DC39 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				65A4D726137000530091DC39 /* MDSectionedTableViewDataSource.h */,
+				658114C713721246008A373A /* MDSectionedTableViewDelegate.h */,
 				65A4D722137000530091DC39 /* MDSectionedTableView.h */,
 				65A4D723137000530091DC39 /* MDSectionedTableView.m */,
 				65A4D724137000530091DC39 /* MDTableViewCell.h */,
 				65A4D725137000530091DC39 /* MDTableViewCell.m */,
-				65A4D726137000530091DC39 /* MDSectionedTableViewDataSource.h */,
 				65A4D727137000530091DC39 /* MDTableViewHeaderCell.h */,
 				65A4D728137000530091DC39 /* MDTableViewHeaderCell.m */,
 			);
@@ -335,6 +337,7 @@
 				65A4D71E136FFC7D0091DC39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
