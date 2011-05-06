@@ -45,17 +45,17 @@
     // Insert code here to initialize your application
 }
 
-- (NSInteger)numberOfSectionsInTableView:(MDSectionedTableView *)aTableView
+- (NSUInteger)numberOfSectionsInTableView:(MDSectionedTableView *)aTableView
 {
     return 30;
 }
 
-- (NSInteger)tableView:(MDSectionedTableView *)aTableView numberOfRowsInSection:(NSInteger)section
+- (NSUInteger)tableView:(MDSectionedTableView *)aTableView numberOfRowsInSection:(NSUInteger)section
 {
     return section;
 }
 
-- (MDTableViewCell *)tableView:(MDSectionedTableView *)aTableView cellForRow:(NSInteger)row inSection:(NSInteger)section
+- (MDTableViewCell *)tableView:(MDSectionedTableView *)aTableView cellForRow:(NSUInteger)row inSection:(NSUInteger)section
 {
     static NSString *cellId = @"cell";
     MDTableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:cellId];
@@ -69,7 +69,7 @@
     return cell;
 }
 
-- (MDTableViewCell *)tableView:(MDSectionedTableView *)aTableView cellForHeaderOfSection:(NSInteger)section
+- (MDTableViewCell *)tableView:(MDSectionedTableView *)aTableView cellForHeaderOfSection:(NSUInteger)section
 {
     static NSString *cellId = @"headerCell";
     MDTableViewHeaderCell *cell = (MDTableViewHeaderCell *)[aTableView dequeueReusableCellWithIdentifier:cellId];
