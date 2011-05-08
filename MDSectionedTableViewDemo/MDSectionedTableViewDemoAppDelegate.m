@@ -48,6 +48,7 @@
 - (NSUInteger)numberOfSectionsInTableView:(MDSectionedTableView *)aTableView
 {
     return 30;
+    //return 1414; // 1 000 000 rows!!!
 }
 
 - (NSUInteger)tableView:(MDSectionedTableView *)aTableView numberOfRowsInSection:(NSUInteger)section
